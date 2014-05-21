@@ -1,0 +1,8 @@
+django-cms
+Pillow==2.0.0
+django-filer==0.9.4
+cmsplugin-filer==0.9.5
+easy_thumbnails>=1.0-alpha-17
+django-polymorphic>=0.2
+django-tinymce
+cmsplugin_nivoslider

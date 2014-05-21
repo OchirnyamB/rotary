@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block base_content %}
+  <div class="row">
+    <div class="col-md-7 wrapcol">
+      {% placeholder Column_1 %}				
+    </div>
+    <div class="col-md-4 wrapcol">
+      {% placeholder Column_2 %}
+    </div>
+  </div>
+{% endblock %}

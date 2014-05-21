@@ -1,0 +1,10 @@
+*.pyc
+venv/
+*~
+*.swp
+*.swo
+/media/
+/static/
+/templates/
+/database
+my_email.py

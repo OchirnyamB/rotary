@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load cms_tags sekizai_tags %}
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>Rotary Club Of Rosslyn</title>
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/dropdown.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/global.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {% render_block "css" %}
+  </head>
+  <body>
+    {% cms_toolbar %}
+    <div class="container">
+      <div class="header">
+        <div class="banner">
+          <img src="{{ STATIC_URL }}/images/mark-of-excellence-200.png">
+	  <h1>Rotary Club</h1>
+        </div>
+        <ul class="nav nav-pills" id="menuRoot">
+          <li class="dropdown subnav"><a class="subnav" href="/">Home</a></li>
+          <li class="dropdown subnav"><a class="subnav" href="#">About Us</a>
+            <ul class="subMenu1">
+             <li><a class="subnav" href="#">Activities</a></li>
+             <li><a class="subnav" href="#">Board & Committees</a></li>
+             <li><a class="subnav" href="#">Members</a></li>
+            </ul>
+          </li>
+          <li class="dropdown subnav"><a class="subnav" href="#">Events & Info</a>
+            <ul class="subMenu1">
+             <li><a class="subnav" href="#">Speakers & Programs</a></li>
+             <li><a class="subnav" href="#">News</a></li>
+            </ul>
+          </li>
+          <li class="dropdown subnav"><a class="subnav" href="#">Projects</a>
+	    <ul class="subMenu1">
+              <li><a class="subnav" href="#">International</a></li>
+              <li><a class="subnav" href="#">Community</a></li>
+            </ul>
+          </li>
+          <li><a class="subnav" href="#">AICL</a></li>
+          <li><a class="subnav" href="#">RRF</a></li>
+          <li class="dropdown subnav"><a class="subnav" href="#">Join Us</a>
+            <ul class="subMenu1">
+              <li><a class="subnav" href="#">Member Info</a></li>
+              <li><a class="subnav" href="#">How To Join</a></li>
+            </ul>
+          </li>
+          {% if user.is_authenticated %}
+          <li><a class="subnav" href="/logout/">Logout</a></li>
+          {% else %}
+          <li><a class="subnav" href="/login/">Login</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-2 sidebar wrapcol">
+          <ul class="nav nav-sidebar">
+            <li><a href="http://www.rotary.org/">Rotary International</a></li>
+            <li><a href="http://www.rotary7610.org/">District 7610</a></li>
+          </ul> 
+        </div>
+        <div class="col-md-9">
+          {% block base_content %}
+          {% endblock %}
+        </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    {% render_block "js" %}
+  </body>
+</html>

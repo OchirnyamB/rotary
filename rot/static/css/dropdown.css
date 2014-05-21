@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+	
+/*Dropdown menu*/
+
+.menu #menu{
+width:200px;
+margin-top:2%;
+margin-bottom:5%;
+margin-left:35%;
+margin-right:35%;
+}
+
+/*Dropdown Menu End*/
+
+#menuRoot li {
+    display: none;
+    width: 9em;
+    height: 2.5em;
+    padding-top: 2%;
+    
+    /*position:relative;*/
+    background-color: #ede8d2;
+    float: left;
+    text-align: center;
+    line-height: 1.2em;
+	-webkit-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.75);
+	
+}
+/*main nav words*/
+.dropdown a { 
+	text-decoration: none; 
+	color: #881819; font-size:1.2em; 
+	font-family:"trajan-pro-3",sans-serif;	
+	}
+	
+/*main nav visited link color*/	
+a:visited {
+	color:#C99;	
+}
+
+/*First level dropdown box*/
+.subMenu1  {
+	position: relative; 
+	/*Z-index makes the dropdown boxes stay on top during responsive mode*/
+	z-index:999; 
+	}
+	
+/*First level dropdown box text color*/	
+.subMenu1, .subMenu1 a {  
+	font-size:0.985em;
+ 	color: white; 
+	z-index:999;	 
+}
+
+/*First level dropdown box color, padding-top controls the amount of space above the word in the box*/	
+#menuRoot .subMenu1 li {
+    background-color: #881819;
+	padding-top:15%;	
+    border-top: 3px solid white;
+	z-index:999;
+}
+
+li>ul { 
+
+display: none; 
+
+}
+li:hover>ul
+
+{
+    display: block;
+}
+
+}
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 968px) {
+
+/*Dropdown menu*/
+
+.menu #menu{
+	display: none;
+	width:200px;
+	margin-top:2%;
+	margin-bottom:5%;
+	margin-left:35%;
+	margin-right:35%;
+}
+
+/*Dropdown Menu End*/
+
+#menuRoot li {
+    display:block;
+    width: 9em;
+    height: 2.5em;
+    padding-top: 2%;
+    
+    /*position:relative;*/
+    background-color: #ede8d2;
+    float: left;
+    text-align: center;
+    line-height: 1.2em;
+	-webkit-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.75);
+	
+}
+/*main nav words*/
+.dropdown a { 
+	text-decoration: none; 
+	color: #881819; font-size:1.2em; 
+	font-family:"trajan-pro-3",sans-serif;	
+	}
+	
+/*main nav visited link color*/	
+a:visited {
+	color:#C99;	
+}
+
+/*First level dropdown box*/
+.subMenu1  {
+	position: relative; 
+	/*Z-index makes the dropdown boxes stay on top during responsive mode*/
+	z-index:999; 
+	}
+	
+/*First level dropdown box text color*/	
+.subMenu1, .subMenu1 a {  
+	font-size:0.985em;
+ 	color: white; 
+	z-index:999;	 
+}
+
+/*First level dropdown box color, padding-top controls the amount of space above the word in the box*/	
+#menuRoot .subMenu1 li {
+    background-color: #881819;
+	padding-top:15%;	
+    border-top: 3px solid white;
+	z-index:999;
+}
+
+li>ul { 
+
+display: none; 
+
+}
+li:hover>ul
+
+{
+    display: block;
+}
+
+}
+
+@media only screen and (min-width: 969px) and (max-width: 1024px) {
+
+/*Dropdown menu*/
+
+.menu #menu{
+	display: none;
+	width:200px;
+	margin-top:2%;
+	margin-bottom:5%;
+	margin-left:35%;
+	margin-right:35%;
+}
+
+/*Dropdown Menu End*/
+
+#menuRoot li {
+    display:block;
+    width: 12em;
+    height: 2.5em;
+    padding-top: 2%;
+    
+    /*position:relative;*/
+    background-color: #ede8d2;
+    float: left;
+    text-align: center;
+    line-height: 1.2em;
+	-webkit-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.75);
+	
+}
+/*main nav words*/
+.dropdown a { 
+	text-decoration: none; 
+	color: #881819; font-size:1.2em; 
+	font-family:"trajan-pro-3",sans-serif;	
+	}
+	
+/*main nav visited link color*/	
+a:visited {
+	color:#C99;	
+}
+
+/*First level dropdown box*/
+.subMenu1  {
+	position: relative; 
+	/*Z-index makes the dropdown boxes stay on top during responsive mode*/
+	z-index:999; 
+	}
+	
+/*First level dropdown box text color*/	
+.subMenu1, .subMenu1 a {  
+	font-size:0.985em;
+ 	color: white; 
+	z-index:999;	 
+}
+
+/*First level dropdown box color, padding-top controls the amount of space above the word in the box*/	
+#menuRoot .subMenu1 li {
+    background-color: #881819;
+	padding-top:15%;	
+    border-top: 3px solid white;
+	z-index:999;
+}
+
+li>ul { 
+
+display: none; 
+
+}
+li:hover>ul
+
+{
+    display: block;
+}
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+/*Dropdown menu*/
+
+.menu #menu{
+	display: none;
+	width:200px;
+	margin-top:2%;
+	margin-bottom:5%;
+	margin-left:35%;
+	margin-right:35%;
+}
+
+/*Dropdown Menu End*/
+
+#menuRoot li {
+    display:block;
+    width: 7em;
+    height: 2.5em;
+    padding-top: 2%;
+    
+    /*position:relative;*/
+    background-color: #ede8d2;
+    float: left;
+    text-align: center;
+    line-height: 1.2em;
+	-webkit-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.75);
+	
+}
+/*main nav words*/
+.dropdown a { 
+	text-decoration: none; 
+	color: #881819; font-size:1.2em; 
+	font-family:"trajan-pro-3",sans-serif;	
+	}
+	
+/*main nav visited link color*/	
+a:visited {
+	color:#C99;	
+}
+
+/*First level dropdown box*/
+.subMenu1  {
+	position: relative; 
+	/*Z-index makes the dropdown boxes stay on top during responsive mode*/
+	z-index:999; 
+	}
+	
+/*First level dropdown box text color*/	
+.subMenu1, .subMenu1 a {  
+	font-size:0.985em;
+ 	color: white; 
+	z-index:999;	 
+}
+
+/*First level dropdown box color, padding-top controls the amount of space above the word in the box*/	
+#menuRoot .subMenu1 li {
+    background-color: #881819;
+	padding-top:15%;	
+    border-top: 3px solid white;
+	z-index:999;
+}
+
+li>ul { 
+
+display: none; 
+
+}
+li:hover>ul
+
+{
+    display: block;
+}
+
+}
+
+
+@media only screen and (min-width: 1201px) {
+
+/*Dropdown menu*/
+
+.menu #menu{
+	display: none;
+	width:200px;
+	margin-top:2%;
+	margin-bottom:5%;
+	margin-left:35%;
+	margin-right:35%;
+}
+
+/*Dropdown Menu End*/
+
+#menuRoot li {
+/*    display:block;
+    width: 9em;
+    height: 2.5em;
+    padding-top: 2%;
+*/    
+    /*position:relative;*/
+/*    background-color: #ede8d2;
+    float: left;
+    text-align: center;
+    line-height: 1.2em;
+	-webkit-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.75);
+*/	
+}
+/*main nav words*/
+.dropdown a { 
+	text-decoration: none; 
+	font-family:"trajan-pro-3",sans-serif;	
+	}
+	
+/*main nav visited link color*/	
+a:visited {
+	color:#C99;	
+}
+
+/*First level dropdown box*/
+.subMenu1  {
+	position: relative; 
+	/*Z-index makes the dropdown boxes stay on top during responsive mode*/
+	z-index:999; 
+	}
+	
+/*First level dropdown box text color*/	
+.subMenu1, .subMenu1 a {  
+	font-size:0.985em;
+	z-index:999;	 
+}
+
+/*First level dropdown box color, padding-top controls the amount of space above the word in the box*/	
+#menuRoot .subMenu1 li {
+    z-index:999;
+}
+
+li>ul { 
+
+display: none; 
+
+}
+li:hover>ul
+
+{
+    display: block;
+}
+
+}
+
+
